@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.screen {
+    width: 800px;
+    height: 600px;
+    background-color: white;
+    padding: 32px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-right {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    text-align: right;
+}
+
+.temp {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+}
+
+.city {
+    font-size: 14px;
+    color: #666;
+}
+
+.time {
+    font-size: 48px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.greeting {
+    font-size: 20px;
+    color: #6a5acd;
+    margin-bottom: 32px;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px 16px;
+    border-radius: 24px;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.search-bar input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #999; 
+    cursor: default; 
+}
+
+.search-bar input::placeholder {
+    color: #999;
+}
+
+.icon-row {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default; 
+}
+
+.icon img {
+    width: 24px;
+    height: 24px;
+    filter: grayscale(100%) contrast(1.2);
+}
+
+.icon:last-child {
+    background-color: #eaeaea;
+    font-size: 24px;
+    font-weight: bold;
+    color: #666;
+}
