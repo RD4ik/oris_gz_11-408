@@ -1,0 +1,5 @@
+{
+    "StaticDirectoryPath": "public/",
+    "Domain": "localhost",
+    "Port": "8888"
+}
